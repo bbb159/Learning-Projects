@@ -1,0 +1,40 @@
+// Global styling for this template
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  @extend %serif-font;
+}
+
+hr {
+  border-width: 3px;
+  border-color: $primary;
+}
+
+hr.light {
+  border-color: $white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend %sans-serif-font;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+.section-heading {
+  margin-top: 0;
+}
+
+.bg-black {
+  background-color: $black !important;
+}

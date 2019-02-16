@@ -1,0 +1,49 @@
+// Styling for the masthead
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 56px);
+    background-image: url('../images/jumbo-home.png');
+    background-position: center center;
+    @extend %background-cover;
+    hr {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      border: 1px solid rgb(255, 255, 255);
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-weight: 300;
+    }
+    @media (min-width: 768px) {
+      p {
+        font-size: 1.15rem;
+      }
+    }
+    @media (min-width: 992px) {
+      height: 100vh;
+      min-height: 650px;
+      padding-top: 0;
+      padding-bottom: 0;
+      h1 {
+        font-size: 3rem;
+      }
+    }
+    @media (min-width: 1200px) {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  // Styling for the services section
+.service-box {
+  max-width: 400px;
+}
+
+.box{
+  border:1px solid #ccc;
+  padding:20px;
+}
+  

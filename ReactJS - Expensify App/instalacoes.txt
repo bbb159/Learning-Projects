@@ -1,0 +1,5 @@
+Babel
+Webpack
+Normalize
+
+instalar esses loader

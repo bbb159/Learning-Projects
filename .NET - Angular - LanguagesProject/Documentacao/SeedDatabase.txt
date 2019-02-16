@@ -1,0 +1,121 @@
+------------JSON USUARIO------------
+
+[
+  {
+    "Nome": "Sophie",
+    "Email": "sophiefischer@verbus.com",
+    "DataNascimento": "1983-07-17",
+    "Password": "123456",
+    "Genero": "F",
+    "Cidade": "Kansas",
+    "Estado": "Minas Gerais",
+    "Pais": "Brasil"
+  },
+  {
+    "Nome": "Celeste",
+    "Email": "celestefischer@verbus.com",
+    "DataNascimento": "1966-10-13",
+    "Password": "123456",
+    "Genero": "F",
+    "Cidade": "Draper",
+    "Estado": "Minas Gerais",
+    "Pais": "Brasil"
+  },
+  {
+    "Nome": "Brandi",
+    "Email": "brandifischer@verbus.com",
+    "DataNascimento": "1957-11-08",
+    "Password": "123456",
+    "Genero": "F",
+    "Cidade": "Chical",
+    "Estado": "Minas Gerais",
+    "Pais": "Brasil"
+  },
+  {
+    "Nome": "Bruno",
+    "Email": "bruno@ufu.com",
+    "DataNascimento": "1997-11-08",
+    "Password": "123456",
+    "Genero": "M",
+    "Cidade": "Uberlandia",
+    "Estado": "Minas Gerais",
+    "Pais": "Brasil"
+  },
+  {
+    "Nome": "Esdras",
+    "Email": "esdras@hotmail.com",
+    "DataNascimento": "1980-02-06",
+    "Password": "123456",
+    "Genero": "M",
+    "Cidade": "Cosmopolis",
+    "Estado": "Sao Paulo",
+    "Pais": "Brasil"
+  }
+]
+
+
+------------JSON GRUPO------------
+
+{
+	"Nome": "Italiano 100",
+	"Cidade": "Uberlandia",
+	"Estado": "Minas Gerais",
+	"Descricao": "Italiano com willy",
+	"QuantidadeMembrosMaxima": 3,
+	"QuantidadeMembrosAtual": 1,
+	"CodigoUsuarioLider": 1,
+	"Nivel": 2
+}
+
+
+
+
+------------INSERT SQL GRUPO------------
+
+INSERT INTO public."Grupos"(
+cidade, "codigoUsuarioLider", descricao, estado, nivel, nome, "quantidadeMembrosAtual", "quantidadeMembrosMaxima")
+VALUES ('Uberlandia', 1, 'Ingles rapido e pratico', 'Minas Gerais', 3, 'Ingles topper', 5, 10);
+
+INSERT INTO public."Grupos"(
+cidade, "codigoUsuarioLider", descricao, estado, nivel, nome, "quantidadeMembrosAtual", "quantidadeMembrosMaxima")
+VALUES ('Araguari', 2, 'Alemao na veia', 'Minas Gerais', 3, 'Alemao intensivao', 2, 4);
+
+INSERT INTO public."Grupos"(
+cidade, "codigoUsuarioLider", descricao, estado, nivel, nome, "quantidadeMembrosAtual", "quantidadeMembrosMaxima")
+VALUES ('Sao paulo', 1, 'Frances com um professor espetacular', 'Sao paulo', 2, 'Frances allday', 3, 5);
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

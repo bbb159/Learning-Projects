@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h1>Seu perfil</h1>
+      </div>
+      <div class="col-sm-8">
+        <div class="alert alert-info" [hidden]="!editForm.dirty">
+          <p>
+            <strong>Atenção:</strong> Dados alterados e não salvos. Clique em salvar!</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="panel panel-default">
+          <h2><strong>{{user.nome}}</strong></h2>
+          <div class="panel-body">
+            <div>
+              <strong>Localização:</strong>
+              <p>{{user.cidade}}, {{user.estado}}</p>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <button [disabled]="!editForm.dirty" form="editForm" class="btn btn-success btn-block">Salvar</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-8">
+  
+        <div class="tab-panel">
+          <tabset class="member-tabset">
+            <tab heading="Editar perfil">
+              <form #editForm="ngForm" id="editForm" (ngSubmit)="updateUser()">
+                <h4>Detalhes da sua localização: </h4>
+                <div class="form-inline">
+                  <label for="city">Cidade: </label>
+                  <input class="form-control" type="text" name="cidade" [(ngModel)]="user.cidade">
+                  <label for="state">Estado: </label>
+                  <input class="form-control" type="text" name="estado" [(ngModel)]="user.estado">
+                </div>
+              </form>
+            </tab>
+  
+            <tab heading="Editar fotos">
+              <p>Edit photos will go here</p>
+            </tab>
+          </tabset>
+        </div>
+  
+  
+      </div>
+    </div>
+  </div>

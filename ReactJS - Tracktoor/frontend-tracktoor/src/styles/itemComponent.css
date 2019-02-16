@@ -1,0 +1,116 @@
+.title {
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cards {
+    color: black;
+}
+
+.pagination {
+    color: black;
+}
+
+.loading {
+    color: white;
+}
+
+#btnCreateChar {
+  width: 100%;
+  font-size: 25px;
+}
+
+.requestError{
+  font-size: 25px;
+  text-align: center;
+  font-weight: 500;
+  margin: 2rem 0 2rem 0;
+}
+
+.loader {
+    font-size: 10px;
+    margin: 50px auto;
+    text-indent: -9999em;
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+    background: #960c0c;
+    background: -moz-linear-gradient(left, #960c0c 10%, rgba(255, 255, 255, 0) 42%);
+    background: -webkit-linear-gradient(left, #960c0c 10%, rgba(255, 255, 255, 0) 42%);
+    background: -o-linear-gradient(left, #960c0c 10%, rgba(255, 255, 255, 0) 42%);
+    background: -ms-linear-gradient(left, #960c0c 10%, rgba(255, 255, 255, 0) 42%);
+    background: linear-gradient(to right, #960c0c 10%, rgba(255, 255, 255, 0) 42%);
+    position: relative;
+    -webkit-animation: load3 1.4s infinite linear;
+    animation: load3 1.4s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .loader:before {
+    width: 50%;
+    height: 50%;
+    background: #960c0c;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+  }
+  .loader:after {
+    background: #191919;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  @-webkit-keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+  .jumbotron-fluid {
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 20%,
+              #191919), url(https://daten.rubies.de/Bilddaten/LizenzSlider/Marvel_Universe.jpg) center;   
+    background-size: cover;
+    opacity: 0.3;
+    min-height: 400px;   
+}
+
+
+.jumboTitle {
+    font-weight: bold;
+    text-shadow: 1px 1px 4px #696969;
+    color: #FFB300;
+    letter-spacing: 0.3rem;
+    font-size: 2.8rem;
+}
+
+.jumboDescription {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  color: white !important;
+}

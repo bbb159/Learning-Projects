@@ -1,0 +1,15 @@
+Resources:
+  GroupsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.groupsTable}
+      AttributeDefinitions:
+        - AttributeName: groupId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: groupId
+          KeyType: HASH
+      # Set the capacity based on the stage
+      ProvisionedThroughput:
+        ReadCapacityUnits: ${self:custom.tableThroughput}
+        WriteCapacityUnits: ${self:custom.tableThroughput}

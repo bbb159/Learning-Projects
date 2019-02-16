@@ -1,0 +1,14 @@
+====EXTENSIONS VS CODE====
+
+	> C# by omnisharp
+	> C# extensions by jchannon
+	> Angular Snippets by John papa
+	> Angular files by Alexander
+	> Angular language service by Angular
+	> Bracket Pair Colorizer by CoenraadS
+	> Material Icon Theme by Philipp
+	> Path Intellisense by Christian
+	> Prettier - Code Formatter by Esben
+	> Tslint by tslint
+	> Nuget package manager by jmrog
+	> Typescript Hero by Christoph

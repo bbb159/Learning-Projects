@@ -1,0 +1,30 @@
+Resources:
+  UserGroupTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.userGroupTable}
+      AttributeDefinitions:
+        - AttributeName: groupId
+          AttributeType: S
+        - AttributeName: userId
+          AttributeType: S
+      GlobalSecondaryIndexes:
+        - IndexName: UserGroupIndex
+          KeySchema:
+            - AttributeName: userId
+              KeyType: HASH
+            - AttributeName: groupId
+              KeyType: RANGE
+          Projection:
+            ProjectionType: KEYS_ONLY
+          ProvisionedThroughput:
+            ReadCapacityUnits: ${self:custom.tableThroughput}
+            WriteCapacityUnits: ${self:custom.tableThroughput}
+      KeySchema:
+        - AttributeName: groupId
+          KeyType: HASH
+        - AttributeName: userId
+          KeyType: RANGE
+      ProvisionedThroughput:
+        ReadCapacityUnits: ${self:custom.tableThroughput}
+        WriteCapacityUnits: ${self:custom.tableThroughput}

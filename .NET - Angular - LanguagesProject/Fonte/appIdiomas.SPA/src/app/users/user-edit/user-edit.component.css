@@ -1,0 +1,11 @@
+.panel-body {
+    padding: 0 25px;
+}
+
+.panel-footer {
+    padding: 10px 15px;
+    background-color: #fff;
+    border-top: none;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}

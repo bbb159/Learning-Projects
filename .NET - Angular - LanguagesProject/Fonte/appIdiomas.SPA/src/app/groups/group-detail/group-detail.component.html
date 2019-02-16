@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="row">
+    <h1>{{group.descricao}}</h1>
+    <h4>Quantidade pessoas atuais no grupo: {{group.quantidadeMembrosAtual}}</h4>
+    <h4>Quantidade pessoas máxima permitida: {{group.quantidadeMembrosMaxima}}</h4>
+    <button class="btn btn-primary" (click)="joinGroup(group.id)">Entrar</button>
+  </div>
+</div>

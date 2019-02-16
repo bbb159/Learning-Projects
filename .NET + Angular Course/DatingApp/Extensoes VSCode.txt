@@ -1,0 +1,14 @@
+C# for Visual Studio Code (powered by OmniSharp)
+C# Extensions
+vscode-nuget-package-manager
+Angular v6 snippets
+Angular files
+Angular language service
+Angular2-switcher
+Auto rename tag
+bracket pair colorizer
+debugger fro chrome
+material icon theme
+path intellisense
+prettier
+tslint

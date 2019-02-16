@@ -1,0 +1,20 @@
+{
+  "name": "auth_server",
+  "version": "1.0.0",
+  "description": "just a proxy that authenticates user",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "request": "^2.87.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0"
+  }
+}

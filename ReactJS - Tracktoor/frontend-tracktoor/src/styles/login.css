@@ -1,0 +1,64 @@
+body {
+    color: white !important;
+}
+
+#title {
+    color: white;
+    font-size: 30px !important;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#loginForm{
+    color: white;
+    margin-top: 10%;
+}
+
+.input-group {
+    margin-top: 10px;
+}
+
+.login {
+    width: 100%;
+    cursor: pointer;
+}
+
+.inputText {
+    min-height: 50px;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px white inset; /* Change the color to your own background color */
+    -webkit-text-fill-color: rgb(0, 0, 0);
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 50px white inset;
+    -webkit-text-fill-color: rgb(0, 0, 0);
+}
+
+
+.loginBox {
+    margin-top: 8rem;
+    background-color: #2b2b2b !important;
+    border-radius: 3%;
+}
+
+.loginBox hr {
+    border: 1px solid rgb(58, 58, 58);
+}
+
+.error {
+    color:white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.loginTitle {
+    text-align: center;
+    color: #dc3545;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    font-size: 2.8rem;
+}
+

@@ -1,0 +1,12 @@
+body{
+    background-color: #191919 !important;
+}
+
+html {
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.root {
+    height: 100%;
+}

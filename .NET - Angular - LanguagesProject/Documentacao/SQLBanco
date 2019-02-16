@@ -1,0 +1,91 @@
+-- Table: public."Grupos"
+
+-- DROP TABLE public."Grupos";
+
+CREATE TABLE public."Grupos"
+(
+    id integer NOT NULL,
+    nome character varying(30) COLLATE pg_catalog."default" NOT NULL,
+    cidade character varying(20) COLLATE pg_catalog."default" NOT NULL,
+    estado character varying(20) COLLATE pg_catalog."default" NOT NULL,
+    descricao character varying(150) COLLATE pg_catalog."default",
+    "quantidadeMembrosMaxima" integer NOT NULL,
+    "quantidadeMembrosAtual" integer NOT NULL,
+    "codigoUsuarioLider" integer NOT NULL,
+    foto integer,
+    nivel integer NOT NULL,
+    "DataEncontros" integer[],
+    feed character varying(200) COLLATE pg_catalog."default",
+    CONSTRAINT "Grupos_pkey" PRIMARY KEY (id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."Grupos"
+    OWNER to postgres;
+	
+	
+	
+	
+	
+	
+-- Table: public."Usuarios"
+
+-- DROP TABLE public."Usuarios";
+
+CREATE TABLE public."Usuarios"
+(
+    id integer NOT NULL,
+    nome character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    "dataNascimento" date NOT NULL,
+    email character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    preferencias character varying(50) COLLATE pg_catalog."default",
+    "passwordHash" bytea,
+    "passwordSalt" bytea,
+    genero "char",
+    "criadoEm" date,
+    "vistoEm" date,
+    cidade character varying(20) COLLATE pg_catalog."default",
+    estado character varying(20) COLLATE pg_catalog."default",
+    pais character varying(20) COLLATE pg_catalog."default",
+    CONSTRAINT "Usuarios_pkey" PRIMARY KEY (id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."Usuarios"
+    OWNER to postgres;
+	
+
+	
+
+	
+-- Table: public."UsuariosGrupos"
+
+-- DROP TABLE public."UsuariosGrupos";
+
+CREATE TABLE public."UsuariosGrupos"
+(
+    usuarioid integer NOT NULL,
+    grupoid integer NOT NULL,
+    CONSTRAINT "UsuariosGrupos_PK" PRIMARY KEY (usuarioid, grupoid),
+    CONSTRAINT "grupoId_FK" FOREIGN KEY (grupoid)
+        REFERENCES public."Grupos" (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT "usuarioId_FK" FOREIGN KEY (usuarioid)
+        REFERENCES public."Usuarios" (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."UsuariosGrupos"
+    OWNER to postgres;

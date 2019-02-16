@@ -1,0 +1,35 @@
+// Styling for the navbar
+
+
+
+#mainNav {
+    background-color: $white;
+    @extend %sans-serif-font;
+    @extend %transition-all;
+    .navbar-brand {
+      font-weight: 100;
+      text-transform: uppercase;
+      color: black;
+      padding-right: 5px;
+      border-right: 1px solid black;
+    }
+    .navbar-nav {
+      > li.nav-item {
+         > a.nav-link,
+        > a.nav-link:focus {
+          font-size: .8rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: $gray-900;
+          &:hover {
+            color: #609eff;
+          }
+        }
+      }
+    }
+    margin-bottom: 10px;
+}
+
+#welcome {
+  color: #609eff !important;
+}
